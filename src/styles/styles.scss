@@ -26,3 +26,23 @@
  $body-highlight-line-height: 24px;
  $header-line-height: 54px;
  $title-line-height: 28px;
+
+ body {
+    background-color: $light-grey;
+    font-family: $body-font;
+    font-weight: $body-font-weight;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    color: $black;
+}
+
+ h2 {
+    font-family: $title-font;
+    font-weight: $title-font-weight;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+    color: $black;
+    text-decoration: underline $red-highlight 0.1875rem;
+    text-underline-offset: 0.25rem;
+    margin-bottom: 36px;
+ }

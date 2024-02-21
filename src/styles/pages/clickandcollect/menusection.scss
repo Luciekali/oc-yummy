@@ -1,0 +1,40 @@
+@import '../../styles.scss';
+
+.menu-section {
+    padding-left: 160px;
+.filterbar {
+    padding-left: 0px;
+    gap: 1rem;
+    display: flex;
+    cursor: pointer;
+    
+    
+    list-style-type: none;
+
+
+    .filterbar-btn{
+    border-radius: 0.5rem;
+    border: none;
+    font-family: $body-font;
+    font-weight: $body-highlight-font-weight;
+    font-size: $body-highlight-font-size;
+    background-color: $white;
+    padding: 8px 16px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+&:hover {
+            outline: solid 2px $black;
+            transition: all 0.1s ease-in-out;
+        } }
+ .active{
+            outline: solid 3px $black;
+            color: $white;
+            border-radius: 0.53rem;
+            background-color: $black;
+            transition: all 0.3s ease-in-out;
+        }
+ 
+        
+
+
+    }}
