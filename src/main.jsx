@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Menu from './pages/Menu.jsx/Menu'
 import Contact from './pages/Contact/Contact'
+import ClickAndCollect from './pages/Click&collect/ClickAndCollect'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/" element={<Home />} />
                 <Route path="/menu" element={<Menu />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/commander" element={<MenuSection />} />
+                <Route path="/commander" element={<ClickAndCollect />} />
               </Routes>
       </BrowserRouter>
   </React.StrictMode>,
