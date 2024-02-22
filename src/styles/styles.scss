@@ -27,8 +27,8 @@
  $header-line-height: 54px;
  $title-line-height: 28px;
 
- body {
-    background-color: $light-grey;
+ @mixin body-props {
+   background-color: $light-grey;
     font-family: $body-font;
     font-weight: $body-font-weight;
     font-size: $body-font-size;
@@ -36,8 +36,25 @@
     color: $black;
 }
 
- h2 {
-    font-family: $title-font;
+@mixin highlight-props {
+font-family: $body-highlight-font;
+font-weight: $body-highlight-font-weight;
+font-size: $body-font-size;
+ line-height: $body-highlight-line-height;
+}
+
+@mixin header-props {
+   font-family: $header-font;
+   font-weight: $header-font-weight;
+   font-size: $header-font-size;
+   line-height: $header-line-height;
+   color: $black;
+}
+
+
+
+@mixin title-props {
+   font-family: $title-font;
     font-weight: $title-font-weight;
     font-size: $title-font-size;
     line-height: $title-line-height;
@@ -45,4 +62,21 @@
     text-decoration: underline $red-highlight 0.1875rem;
     text-underline-offset: 0.25rem;
     margin-bottom: 36px;
+}
+
+ body {
+   @include body-props
+}
+
+h1 {
+   @include header-props
+}
+
+
+ h2 {
+    @include title-props
+ }
+
+ .colored-text {
+   color: $red-highlight
  }
