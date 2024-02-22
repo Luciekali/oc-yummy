@@ -1,0 +1,44 @@
+@import '../../styles.scss';
+
+.restaurant-list {
+    display:flex;
+    flex-direction: row;
+    gap:32px;
+
+    .restaurant-card {
+    background-color: $white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: outset 2px $white;
+   
+    &:hover {
+        border: outset 2px $black;
+    
+            }
+        .restaurant-infos {
+            cursor: pointer;
+            line-height: 16px;
+             display: flex;
+    flex-direction: row;
+    align-items: center;
+        }
+.radio-btn {
+        -webkit-appearance: none;
+        color: $black;
+        border: solid 1px $black;
+        border-radius: 50%;
+        height: 16px;
+        width:16px;
+        cursor: pointer;
+            &:hover {
+                transition: all 100ms;
+                background-color: $light-grey;
+                border-color: $black;
+                border: solid 3px $black;
+            }
+            &:checked {
+                transition: all 120ms;
+                background-color: $light-grey;
+                border: solid 6px $black;
+                border-color: $black;
+}}}}
