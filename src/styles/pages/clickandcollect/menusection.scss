@@ -1,9 +1,7 @@
 @import '../../styles.scss';
 
 .menu-section {
-    padding-left: 160px;
 .filterbar {
-    padding-left: 0px;
     gap: 16px;
     display: flex;
     cursor: pointer;
@@ -29,7 +27,40 @@
             border-radius: 8px;
             background-color: $black;
             transition: all 0.3s ease-in-out;
-        }}
+        }
+    }
 
+}
+.food-wrapper {
+    display:flex;
+    gap: 32px;
+    justify-content: space-between;
 
+    .cart {
+        position:sticky;
+
+    .cart-wrapper {
+        background-color: $white;
+        padding: 32px;
+        border-radius: 8px;
+
+        .pay-btn {
+            color:$white;
+            background-color: $red-highlight;
+            width:100%;
+            border: none;
+            padding:24px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: $body-font-size;
+            font-family: $body-font;
+
+            &:hover {
+                background-color: $black;
+                color: $white;
+                border: 4px $light-grey;
+            }
+        }
     }}
+}
+}
