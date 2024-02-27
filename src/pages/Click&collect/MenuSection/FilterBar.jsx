@@ -1,16 +1,10 @@
-import { useState } from 'react'
 import { menu } from '../../../datas/menu'
-import '../../../styles/pages/clickandcollect/menusection.scss'
+
 const categories = menu.reduce(
     (acc, menu) =>
         acc.includes(menu.category) ? acc : acc.concat(menu.category), [])
 
-
-
-
 function FilterBar({ setCat }) {
-
-
     return (
             <ul className='filterbar'>
                 {categories.map((cat, index) => (
