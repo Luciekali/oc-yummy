@@ -51,8 +51,6 @@ font-size: $body-font-size;
    color: $black;
 }
 
-
-
 @mixin title-props {
    font-family: $title-font;
     font-weight: $title-font-weight;
@@ -79,4 +77,8 @@ h1 {
 
  .colored-text {
    color: $red-highlight
+ }
+
+ ul, li {
+   list-style-type: none;
  }
