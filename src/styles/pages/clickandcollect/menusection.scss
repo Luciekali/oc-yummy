@@ -1,66 +1,122 @@
 @import '../../styles.scss';
 
 .menu-section {
-.filterbar {
-    gap: 16px;
+    padding: 56px;
     display: flex;
-    cursor: pointer;
+    flex-direction: column;
 
-    .filterbar-btn{
-    border-radius: 8px;
-    border: none;
-    font-family: $body-font;
-    font-weight: $body-highlight-font-weight;
-    font-size: $body-highlight-font-size;
-    background-color: $white;
-    padding: 8px 16px;
-    margin-bottom: 16px;
-    cursor: pointer;
+    .filterbar {
+        gap: 16px;
+        display: flex;
+        cursor: pointer;
+        padding-left: 0;
+        margin-bottom: 16px;
 
-        &:hover {
-            outline: solid 2px $black;
-            transition: all 0.1s ease-in-out;
-        } 
-        &:focus{
-            outline: solid 3px $black;
-            color: $white;
-            border-radius: 8px;
-            background-color: $black;
-            transition: all 0.3s ease-in-out;
+        .filterbar-btn{
+        border-radius: 8px;
+        border: none;
+        font-family: $body-font;
+        font-weight: $body-highlight-font-weight;
+        font-size: $body-highlight-font-size;
+        background-color: $white;
+        padding: 8px 16px;
+        cursor: pointer;
+
+            &:hover {
+                outline: solid 2px $black;
+                transition: all 0.1s ease-in-out;
+            } 
+            &:focus{
+                outline: solid 3px $black;
+                color: $white;
+                border-radius: 8px;
+                background-color: $black;
+                transition: all 0.3s ease-in-out;
+            }
         }
     }
-
-}
-.food-wrapper {
+.menu {
     display:flex;
-    gap: 32px;
-    justify-content: space-between;
+    gap: 80px;
+    justify-content: space-between; 
 
     .cart {
-        position:sticky;
+        position: sticky;
+        top: 80px;
+        margin-top: 24px;
+        
 
-    .cart-wrapper {
-        background-color: $white;
+        .cart-wrapper {
+            background-color: $white;
+            padding: 32px;
+            border-radius: 8px;
+            position:sticky;
+            top:16px;
+        
+            .pay-btn {
+                color:$white;
+                background-color: $red-highlight;
+                width:100%;
+                border: none;
+                padding:24px 0;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: $body-font-size;
+                font-family: $body-font;
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                    border: 4px $light-grey;
+                }
+            }
+        }   
+    }
+.food-container {
+    background-color: $white;
+    border-radius: 8px;
+    padding: 0 40px 40px 40px;
+    display:flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-grow: 1;
+
+    .food-card {
+        background-color: $light-grey;
+        border: 2px outset $light-grey;
         padding: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
         border-radius: 8px;
+        
+        .food-card-content {
+            gap: 8px;
+            display:flex;
+            flex-direction: column;
 
-        .pay-btn {
-            color:$white;
-            background-color: $red-highlight;
-            width:100%;
-            border: none;
-            padding:24px 0;
-            border-radius: 4px;
+            .food-name {
+                 font-weight: $body-highlight-font-weight;
+            }
+            .food-price {
+            font-weight: $body-highlight-font-weight;
+            padding-top: 8px;
+            }
+        }
+        .add-food-btn {
+            border-radius: 180px;
+            height: 40px;
+            width: 40px;
+            border: solid 2px $black;
+            font-size: $title-font-size;
             cursor: pointer;
-            font-size: $body-font-size;
-            font-family: $body-font;
 
             &:hover {
                 background-color: $black;
                 color: $white;
-                border: 4px $light-grey;
+                transition: all ease-in-out 0.3s;  
             }
         }
-    }}
-}
-}
+    }
+}}}
