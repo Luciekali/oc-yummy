@@ -13,7 +13,7 @@ return (
                 <li className='restaurant-card'key={restau.id}>
                     <label className="restaurant-infos">
                         <div>
-                        <h3>{restau.name}</h3>
+                        <h4>{restau.name}</h4>
                         <p>{restau.adress}</p>
                         <p>{restau.city}</p>
                         <p>{restau.open}h à {restau.close}h</p>

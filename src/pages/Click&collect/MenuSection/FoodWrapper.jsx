@@ -3,7 +3,7 @@ import FoodCart from './FoodCart'
 
 function FoodWrapper({ clickedCat }) {
     return (
-        <div className='food-wrapper'> 
+        <div className='menu'> 
     <FoodList clickedCat={clickedCat}/>
     <FoodCart/>
     </div>

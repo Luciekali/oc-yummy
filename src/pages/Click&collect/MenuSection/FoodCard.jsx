@@ -2,13 +2,14 @@
 function FoodCard({ name, shortDescription, price, id, description, catId }, index) {
     return (
         <ul key={id} className="food-card">
-            <div>
-                <li key={name}>{name}</li>
-                {shortDescription ? <li key={description}> {shortDescription} </li> : <li>{description}</li>}
-                <li>{price}</li>
+            <div className="food-card-content">
+                <li className="food-name" key={name}>{name}</li>
+                {shortDescription ? <li className="food-description" key={description}> {shortDescription} </li> : <li className="food-description">{description}</li>}
+                <li className="food-price">{price} €</li>
             </div>
-
-            <button>+</button>
+            <div className="food-btns">
+                <button className="add-food-btn">+</button>
+            </div>
         </ul>
     )
 }
