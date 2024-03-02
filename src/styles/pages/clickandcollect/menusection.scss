@@ -104,19 +104,27 @@
             padding-top: 8px;
             }
         }
-        .add-food-btn {
-            border-radius: 180px;
-            height: 40px;
-            width: 40px;
-            border: solid 2px $black;
-            font-size: $title-font-size;
-            cursor: pointer;
+        .food-btns {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 16px;
+            align-items: center;
 
-            &:hover {
-                background-color: $black;
-                color: $white;
-                transition: all ease-in-out 0.3s;  
-            }
+            .add-food-btn, 
+            .subtract-food-btn {
+                border-radius: 180px;
+                height: 40px;
+                width: 40px;
+                border: solid 2px $black;
+                font-size: $title-font-size;
+                cursor: pointer;
+
+                    &:hover {
+                        background-color: $black;
+                        color: $white;
+                        transition: all ease-in-out 0.3s;  
+                    }
+            }   
         }
     }
 }}}
