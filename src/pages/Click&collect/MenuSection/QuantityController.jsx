@@ -1,10 +1,9 @@
-import { useState } from "react"
-
-function QuantityController ( ) {
-     const [ quantity, setQuantity ] = useState(0)
-
+import FoodCard from "./FoodCard"
+function QuantityController ( {quantity, setQuantity} ) {
+     
+    
     return ( 
-        quantity <= 0 ?
+      quantity <= 0 ?
         <div className="food-btns">
             <button className="add-food-btn" onClick={() => setQuantity(quantity + 1)}>+</button> 
         </div> 
