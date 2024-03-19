@@ -10,7 +10,7 @@ function FoodCart ({ cart, }) {
                 <div className="cart-recap">
                     <h4>Récapitulatif de votre commande : </h4>
                         
-                        {cart.map(({name, price, quantity, subtotal }, index) =>(
+                        {cart.map(({name, quantity, subtotal }, index) =>(
                             <ul className="cart-food" key={`${name}-${index}`}>
                                 <li>{name} </li>
                                 <div className="cart-amount">
