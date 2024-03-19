@@ -1,17 +1,13 @@
 import FoodList from './FoodList'
 import FoodCart from './FoodCart'
-
-
 import { useState } from "react"
 
-
-
 function FoodWrapper({ clickedCat }) {
-    const [ quantity, setQuantity ] = useState(0)
+    const [ cart, setCart ] = useState([])
     return (
         <div className='menu'> 
-    <FoodList clickedCat={clickedCat} quantity={quantity} setQuantity={setQuantity}/>
-    <FoodCart quantity={quantity} setQuantity={setQuantity}/>
+    <FoodList clickedCat={clickedCat} cart={cart} setCart={setCart}/>
+    <FoodCart cart={cart} setCart={setCart} />
     </div>
        )
 }
