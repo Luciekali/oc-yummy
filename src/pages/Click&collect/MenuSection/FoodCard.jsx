@@ -1,6 +1,6 @@
 import QuantityController from "./QuantityController"
 
-function FoodCard({ name, shortDescription, price, id, description,}, index) {
+function FoodCard({ name, shortDescription, price, id, description, cart, setCart}) {
  
     return (
         <ul key={id} className="food-card">
@@ -9,7 +9,7 @@ function FoodCard({ name, shortDescription, price, id, description,}, index) {
                 {shortDescription ? <li className="food-description" key={description}> {shortDescription} </li> : <li className="food-description">{description}</li>}
                 <li className="food-price">{price} €</li>
             </div>
-            <QuantityController />
+            <QuantityController cart={cart} setCart={setCart} name={name} price={price}/>
         </ul>
     )
 }
