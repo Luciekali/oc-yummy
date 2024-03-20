@@ -43,6 +43,8 @@ const [quantityDisplay, setQuantityDisplay] = useState(0)
       quantityDisplay < 1 ?
         <div className="food-btns">
             <button className="add-food-btn" onClick={() => addToCart (name, price)} >+</button> 
+            <p className="hidden"> 0</p>
+            <button className="subtract-food-btn hidden" onClick={() => removeToCart (name, price)} > - </button>
         </div> 
 
             :

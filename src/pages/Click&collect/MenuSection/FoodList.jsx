@@ -13,7 +13,8 @@ function FoodList ({ clickedCat, cart, setCart}) {
                 <ul key={cat} className="food-container">
                     <h3>{cat}</h3>
                     {foodBycategorie.map(({ name, shortDescription, price, id, category, description, }) => (
-                        <FoodCard key={id} id={id} name={name} shortDescription={shortDescription} price={price} category={category} description={description} clickedCat={clickedCat} cart={cart} setCart={setCart}/>
+                        <FoodCard key={id} id={id} name={name} shortDescription={shortDescription} price={price} category={category} description={description} 
+                            clickedCat={clickedCat} cart={cart} setCart={setCart}/>
                     ))}
                 </ul>
                 : (null)
